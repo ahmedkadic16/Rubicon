@@ -14,7 +14,7 @@
                     (change)="onStateChange($event)">
     </youtube-player>
   </div>
-  <div class="details">
+  <div class="details" *ngIf="movie">
     <h1>{{movie.original_title}}</h1>
     <p>Original language: {{movie.original_language}}</p>
     <p>Description: {{movie.overview}}</p>

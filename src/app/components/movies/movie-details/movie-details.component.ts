@@ -13,7 +13,6 @@ export class MovieDetailsComponent implements OnInit {
   movie?: any;
   videoKey='';
   player: any;
-
   constructor(private route: ActivatedRoute,
               private location: Location,
               private dataservis:DataserviceService,

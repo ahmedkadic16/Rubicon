@@ -4,8 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Build ##
 
-1. run ng build 
-2. run npm install
-3. run npm i ngx-youtube-player 
+1. run npm install
+2. run npm i ngx-youtube-player 
    if this doesn't work run npm i ngx-youtube-player --force
-4. ng serve
+3. ng serve

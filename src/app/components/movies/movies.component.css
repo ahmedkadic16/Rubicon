@@ -1,0 +1,39 @@
+img {
+  width: 100%;
+  height: 500px;
+}
+.movies {
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  display:flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+}
+.movies li {
+  flex:48%;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 1%;
+}
+a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+h3 {
+  margin-top: 1%;
+  margin-bottom: 0;
+}
+input {
+  width: 97%;
+  padding: 1%;
+  border-radius: 50px;
+}
+@media only screen and (max-width: 600px) {
+  .movies {
+    flex-direction: column;
+  }
+}

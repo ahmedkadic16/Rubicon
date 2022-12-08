@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="nav" *ngIf="nav.visible">
+    <div class="row">
+      <nav>
+        <ul>
+          <li><a routerLink="/movies" routerLinkActive="active">Movies</a></li>
+          <li><a routerLink="/tvshows" routerLinkActive="active">TV Shows</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="outlet">
+    <router-outlet></router-outlet>
+  </div>
+</div>

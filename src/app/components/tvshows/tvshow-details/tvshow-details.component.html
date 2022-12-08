@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <button (click)="goBack()"><span>&#8592;</span>Back</button>
+  </div>
+  <div class="media">
+    <img *ngIf="videoKey===''" alt="No image available"
+         src="https://image.tmdb.org/t/p/original{{tvshow.backdrop_path}}">
+    <youtube-player *ngIf="videoKey!=''"
+                    allow-presentation
+                    [height]="500"
+                    [width]="width"
+                    [videoId]="videoKey"
+                    (ready)="savePlayer($event)"
+                    (change)="onStateChange($event)">
+    </youtube-player>
+  </div>
+  <div class="details">
+    <h1>{{tvshow.name}}</h1>
+    <p>Origin country: {{tvshow.origin_country}}</p>
+    <p>Original language: {{tvshow.original_language}}</p>
+    <p>Description: {{tvshow.overview}}</p>
+  </div>
+</div>
